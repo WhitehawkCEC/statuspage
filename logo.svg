@@ -198,10 +198,10 @@
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title>Generic Logo</dc:title>
+        <dc:title>Whitehawk</dc:title>
         <dc:date>2010-08-03T00:39:17</dc:date>
-        <dc:description>generic example of a logo</dc:description>
-        <dc:source>https://openclipart.org/detail/76573/generic-logo-by-shokunin</dc:source>
+        <dc:description>Whitehawk Services Status Page</dc:description>
+        <dc:source>https://wh-site.s3.amazonaws.com/logo.png</dc:source>
         <dc:creator>
           <cc:Agent>
             <dc:title>shokunin</dc:title>
