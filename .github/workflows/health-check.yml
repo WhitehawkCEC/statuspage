@@ -3,17 +3,7 @@ name: Scheduled Health Check
 # Controls when the action will run.
 on:
   schedule:
-    # Weekdays around business hours (EST)
-    # https://crontab.guru/#*/15_13-23_*_*_1-5
-    - cron: '*/15 13-23 * * 1-5'
-
-    # Weekdays outside business hours (EST)
-    # https://crontab.guru/#*/30_0-12_*_*_1-5
-    - cron: '*/30 0-12 * * 1-5'
-
-    # Weekends
-    # https://crontab.guru/#0_*/2_*_*_0,6
-    - cron: '0 */2 * * 0,6'
+    - cron: '*/5 * * * *'
 
 jobs:
   health_check_job:
