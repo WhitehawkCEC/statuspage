@@ -41,7 +41,7 @@ for ((index = 0; index < ${#KEYSARRAY[@]}; index++)); do
     fi
     sleep 5
   done
-  dateTime=$(date +'%Y-%m-%d %H:%M')
+  dateTime=$(date --iso-8601=seconds)
   if [[ $commit == true ]]; then
     echo $dateTime, $result >>"logs/${key}_report.log"
     # By default we keep 2000 last log entries.  Feel free to modify this to meet your needs.
