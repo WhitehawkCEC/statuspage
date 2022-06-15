@@ -183,7 +183,12 @@ function splitRowsByDate(rows) {
     }
 
     const [dateTimeStr, resultStr] = row.split(",", 2);
-    const dateTime = new Date(dateTimeStr.replace(/-/g, "/"));
+    // old format = `2022-06-15 10:26`
+    // new format = `2022-06-15T11:17:46+00:00`
+    const isOldFormat = dateTimeStr.includes(' ')
+    const dateTime = isOldFormat
+      ? new Date(dateTimeStr.replace(/-/g, "/"))
+      : new Date(dateTimeStr);
     const dateStr = dateTime.toDateString();
 
     let resultArray = dateValues[dateStr];
